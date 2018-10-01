@@ -6,7 +6,7 @@ function quadraticEquation() {
     b = Number(d.inputForm.b.value),
     c = Number(d.inputForm.c.value),
     x1, x2,
-    D = (Math.pow(b,2)) - 4*a*c; // Сalculation of Discriminant
+    D = b**2 - 4*a*c; // Сalculation of Discriminant
 
     // Check Discriminant
     if (D > 0) {
@@ -18,7 +18,7 @@ function quadraticEquation() {
         x1 = (-b)/(2*a);
         return('x1 = '+ x1);
     }
-    else if (D < 0) {
+    (D < 0) {
         return('There is no solution, because Discriminant is 0');
     }
 }
