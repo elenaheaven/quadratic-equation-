@@ -18,7 +18,7 @@ function quadraticEquation() {
         x1 = (-b)/(2*a);
         return('x1 = '+ x1);
     }
-    (D < 0) {
+    else if (D < 0) {
         return('There is no solution, because Discriminant is 0');
     }
 }
